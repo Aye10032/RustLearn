@@ -19,7 +19,11 @@ pub(crate) fn guess() {
 
         println!("Your guess is {guess_str}");
 
-        let guess_num: u32 = guess_str.trim().parse().expect("Please try a number");
+        let guess_num: u32 = match guess_str.trim().parse() {
+            Ok(num) => num,
+            Err(_) => continue,
+        };
+
         match guess_num.cmp(&secret_num) {
             Ordering::Less => { println!("Too small!"); }
             Ordering::Equal => {
