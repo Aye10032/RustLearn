@@ -1,8 +1,9 @@
-use crate::a01_guessing_game::guess;
+use crate::b01_variables::variables;
 
-mod a01_guessing_game;
+mod b01_variables;
 
 fn main() {
     println!("Hello, world!");
-    guess()
+    // guess();
+    variables();
 }
