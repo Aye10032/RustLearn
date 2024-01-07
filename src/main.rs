@@ -1,6 +1,6 @@
-use crate::guessing_game::guess;
+use crate::a01_guessing_game::guess;
 
-mod guessing_game;
+mod a01_guessing_game;
 
 fn main() {
     println!("Hello, world!");
