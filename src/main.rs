@@ -1,9 +1,9 @@
-use crate::b01_variables::variables;
+use crate::b02_data_type::run;
 
-mod b01_variables;
+mod b02_data_type;
 
 fn main() {
-    println!("Hello, world!");
-    // guess();
-    variables();
+    println!("Loading......");
+
+    run();
 }
