@@ -1,9 +1,13 @@
-use crate::b02_data_type::run;
+mod oj{
+    pub mod dc{
+        pub mod p1177;
+    }
+}
 
-mod b02_data_type;
+use oj::dc::p1177;
 
 fn main() {
     println!("Loading......");
 
-    run();
+    p1177::p1177();
 }
