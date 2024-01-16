@@ -27,9 +27,6 @@ pub fn p1048() {
         velue.push(v);
     }
 
-    // println!("{:?}", time);
-    // println!("{:?}", velue);
-
     for i in 1..=m {
         for j in (time[i]..=total_time).rev() {
             dp[j] = dp[j].max(dp[j - time[i]] + velue[i] as i64);
