@@ -10,7 +10,7 @@ pub fn p1048() {
 
     let mut velue: Vec<usize> = Vec::new();
     let mut time: Vec<usize> = Vec::new();
-    let mut dp: Vec<i64> = vec![0; total_time + 1];
+    let mut dp: Vec<usize> = vec![0; total_time + 1];
 
     velue.push(0);
     time.push(0);
@@ -29,7 +29,7 @@ pub fn p1048() {
 
     for i in 1..=m {
         for j in (time[i]..=total_time).rev() {
-            dp[j] = dp[j].max(dp[j - time[i]] + velue[i] as i64);
+            dp[j] = dp[j].max(dp[j - time[i]] + velue[i]);
         }
     }
 
