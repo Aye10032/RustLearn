@@ -1,13 +1,13 @@
 mod oj{
-    pub mod dc{
-        pub mod p1257;
+    pub mod dp{
+        pub mod p1048;
     }
 }
 
-use oj::dc::p1257;
+use oj::dp::p1048;
 
 fn main() {
     println!("Loading......");
 
-    p1257::p1257();
+    p1048::p1048();
 }
